@@ -7,11 +7,10 @@ import Search from './FindOne/Search';
 
 const Home = () => {
     return (
-        <div  className=''>
+        <main>
             <Banner></Banner>
-            <Search></Search>
             <Card></Card>
-       </div>
+       </main>
     );
 };
 

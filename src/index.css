@@ -31,9 +31,7 @@ align-items: center;
 } */
 .object {
   animation: MoveUpDown 3s linear infinite;
-  position: absolute;
- 
-  bottom: 0;
+
 }
 
 @keyframes MoveUpDown {
@@ -45,19 +43,3 @@ align-items: center;
   }
 }
 
-.sigma-btn{
-  padding: 15px;
-  margin: 20px;
-  background-color:crimson;
-  color: aliceblue;
-  border-radius: 10px;
-  font-weight: 800px;
-  font-family: monospace;
-  width: 12rem;
-}
-.sigma-btn:hover{
-  padding: 20px;
-  background-color: black;
-  color: white;
-  transition:ease-in-out
-}

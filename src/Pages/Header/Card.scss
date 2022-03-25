@@ -1,17 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Patua+One");
 
 body {
-  text-align: center;
+  
 
   .container {
-    padding-top: 1%;
+    padding-top: 0%;
 
-    padding-bottom: 4%;
+    padding-bottom: 0%;
   }
 
   h1 {
-    margin-top: 4%;
-    margin-bottom: 4%;
+    margin-top: 0%;
+    margin-bottom: 0%;
     font-family: "Patua One", cursive;
   }
 
@@ -109,9 +109,9 @@ body {
       h1 {
         color: #ffffff;
         font-size: 1.5em;
-        text-transform: uppercase;
+      
         font-family: "Patua One", cursive;
-        font-style: italic;
+        
       }
 
       p {
@@ -147,8 +147,7 @@ body {
   
   .box-tech {
     position: relative;
-    max-height: 255px;
-    height: 255px;
+   
     background-color: #eeeeee;
     display: flex;
     align-content: center;
