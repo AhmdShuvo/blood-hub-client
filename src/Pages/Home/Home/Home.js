@@ -1,8 +1,7 @@
 
 import React from 'react';
-import Card from '../Header/Card';
-import Banner from './Banner/Banner';
-import Search from './FindOne/Search';
+import Card from '../../Common/Header/Card';
+import Banner from '../Banner/Banner';
 
 
 const Home = () => {

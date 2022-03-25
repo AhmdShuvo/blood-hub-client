@@ -5,15 +5,15 @@ import {
   Route, 
   Link 
 } from "react-router-dom";
-import Header from './Pages/Header/Header';
-import Home from './Pages/HomePage/Home';
-import Footer from './Pages/Footer/Footer';
+import Home from "./Pages/Home/Home/Home"
+import Header from "./Pages/Common/Header/Header"
+import Footer from "./Pages/Common/Footer/Footer"
 function App() {
   return (
     <BrowserRouter>
     <Header/>
      <Routes>
-     <Route index element={<Home />} />
+     <Route index element={<Home/>} />
      </Routes>
      <Footer></Footer>
     </BrowserRouter>
