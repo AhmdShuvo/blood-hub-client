@@ -1,14 +1,16 @@
 
 import React from 'react';
-import Card from '../../Common/Header/Card';
 import Banner from '../Banner/Banner';
+import Slider from './Slider/Slider';
+
 
 
 const Home = () => {
     return (
         <main>
             <Banner></Banner>
-            <Card></Card>
+            <Slider></Slider>
+            
        </main>
     );
 };
