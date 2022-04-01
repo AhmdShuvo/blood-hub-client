@@ -48,4 +48,17 @@ align-items: center;
     transform: translateX(-20px);
   }
 }
+.object1 {
+  animation: MoveLeftRight 3s linear infinite;
+
+}
+
+@keyframes moveLeftRight {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+}
 

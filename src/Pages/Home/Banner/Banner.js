@@ -10,7 +10,10 @@ const Banner = () => {
 <div style={{display:'block'}}>
     <h1 className='heading-text '>We Provide All Health Care Solution</h1>
     <h6 className='main-banner-text'>Protect Your Health And <br /> Take Care To Of Your Health</h6><br />
+   <div className="">
+   <a class="btn btn-secondary btn-lg shadow" href="/#">Read More</a>
     <a class="btn btn-secondary btn-lg shadow" href="/#">Read More</a>
+   </div>
 </div>
 
     </section>

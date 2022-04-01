@@ -4,7 +4,7 @@
   }
   
   .bodyy {
-    background: #eee;
+    background: rgb(233, 97, 97);
     position: relative;
     width: 100%;
     height: 100vh;
@@ -39,9 +39,14 @@
     position: relative;
     width: 100%;
     height: auto;
-    background-color: #000;
+    /* background-color: rgba(231, 17, 17, 0.63); */
     display: block;
   }
+  /* .img{
+
+    background-color:rgb(53, 84, 224);
+    opacity: 0.9
+  } */
   
   .container .swiper-container {
     width: 70%;

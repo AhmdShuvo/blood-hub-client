@@ -18,7 +18,7 @@ const Slider = () => {
            <div className=" containerr ">
             <Swiper  effect={"coverflow"}
         centeredSlides={false}
-        slidesPerView={window.innerWidth < 768 ? 1 : "auto"}
+    
         loop={true}
         coverflowEffect={{
           rotate: 50,
@@ -31,6 +31,8 @@ const Slider = () => {
         // install Swiper modules
         modules={[Navigation, Pagination, Scrollbar, A11y,EffectCoverflow]}
         spaceBetween={50}
+        slidesPerView={3}
+        autoplay={true}
         navigation
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
@@ -38,10 +40,10 @@ const Slider = () => {
         onSlideChange={() => console.log('slide change')}
         
       >
-        <SwiperSlide><center><img class="w-auto object " src="./images/doctor.png" alt=""  /></center></SwiperSlide>
-        <SwiperSlide ><center><img class="w-auto object " src="./images/doctor.png" alt="" /></center></SwiperSlide>
-        <SwiperSlide><center><img class="w-auto object "src="./images/doctor.png" alt="" /></center></SwiperSlide>
-        <SwiperSlide><center><img class="w-auto object "src="./images/doctor.png" alt="" /></center></SwiperSlide>
+        <SwiperSlide><center><img class="w-auto object  img " src="./images/doctor.png" alt=""  /></center></SwiperSlide>
+        <SwiperSlide ><center><img class="w-auto object img " src="./images/doctor.png" alt="" /></center></SwiperSlide>
+        <SwiperSlide><center><img class="w-auto  object img "src="./images/doctor.png" alt="" /></center></SwiperSlide>
+        <SwiperSlide><center><img class="w-auto  object img "src="./images/doctor.png" alt="" /></center></SwiperSlide>
         ...
       </Swiper>
        </div>
