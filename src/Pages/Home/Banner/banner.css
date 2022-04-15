@@ -1,0 +1,57 @@
+
+.heading-text{
+    color: #1f2278;
+    font-size: 24px;
+    font-size: 21px;
+    font-weight: 700;
+    padding: 5px 15px;
+    background-image: url("../../../../public/images/bg-text.png");
+  text-align: center;
+}
+.main-banner{
+
+  background-image: url("https://meditro.themetrades.com/react/static/media/shape1.1112f1ac.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  
+}
+.main-banner-text{
+  background-image: url("../../../../public/images/banner-bg.png");
+    font-weight: 800;
+    color: #1f2278;
+    font-size: 55px;
+}
+.btn-secondary.shadow, .btn-secondary:hover {
+  box-shadow: 0 5px 20px 0 rgba(241,119,50,.3)!important;
+}
+.btn-secondary {
+  background-color: #f17732;
+  color: #fff;
+  margin: 10px;
+}
+.btn-lg {
+  font-size: 16px;
+  padding: 20px 35px;
+  line-height: 1;
+}
+.btn {
+  padding: 15px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  transition: all .5s;
+  border-width: 2px;
+  line-height: 1.2;
+}
+.btn:hover{
+  background-color:#f88b4b ;
+}
+
+@media only screen and (max-width: 600px) {
+.main-banner-text{
+    background-color: lightblue;
+    
+    opacity: 1;
+  }
+}
