@@ -7,9 +7,9 @@ const Review = () => {
 
     return (
         <div className='my-32'>
-            <h3>
-                this is review section
-            </h3>
+            <h1 className='text-center mt-10'>
+                OUR CLIENTS REVIEWS
+            </h1>
             <Marquee pauseOnHover="false" speed="80">
                 
                 <div className='review-container g-6'>
