@@ -3,15 +3,15 @@ import './about.css'
 
 const About = () => {
   return (
-    <section className='about-container'>
+    <section className='about-container mb-6'>
       <section className='container-auto'>
-        <center> <h1 className='text-red-600'>Our Goal</h1></center>
+        <center> <h1 className='text-red-600 h1'>Our Goal</h1></center>
         <div className='Goal' style={{ fontFamily: "cursive", padding: '20px' }}>
           <center><h3 className='text-lg'>Our Main goal is to create a communication system with the blood donors and those who is in needed for emergency blood</h3></center>
           <p className='container text-lg mx-4 py-4 px-4'>Blood is the most precious gift that anyone can give to another person – the gift of life. <br /> A decision to donate your blood can save a life, or even several if your blood is separated into its components – red cells, platelets and plasma – which can be used individually for patients with specific conditions.</p>
         </div>
       </section>
-      <center><h1 className='text-red-600'>Our Team Members </h1></center>
+      <center><h1 className='text-red-600 h1'>Our Team Members </h1></center>
       <section className='developer-body'>
 
         <div class="container mx-4 py-4 px-4">

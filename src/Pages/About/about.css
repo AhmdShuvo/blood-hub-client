@@ -124,3 +124,9 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
+.h1{
+  background-image: url(https://i.ibb.co/TMJMNFX/download-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+}
