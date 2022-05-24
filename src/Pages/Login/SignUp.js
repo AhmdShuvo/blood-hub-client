@@ -20,9 +20,9 @@ const SignUp = () => {
                     <form onSubmit={handleSubmit}>
                         <h1>Create Account</h1>
                         <div className="social-container">
-                            <a href="#" className="social"><i className="fab fa-facebook-f"></i></a>
-                            <a href="#" className="social"><i className="fab fa-google-plus-g"></i></a>
-                            <a href="#" className="social"><i className="fab fa-linkedin-in"></i></a>
+                            <a href="#f" className="social"><i className="fab fa-facebook-f"></i></a>
+                            <a href="#g" className="social"><i className="fab fa-google-plus-g"></i></a>
+                            <a href="#l" className="social"><i className="fab fa-linkedin-in"></i></a>
                         </div>
                         <span>or use your email for registration</span>
                         <input type="text"
