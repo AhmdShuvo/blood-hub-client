@@ -3,7 +3,7 @@ import "./banner.css"
 
 const Banner = () => {
     return (
-        <section className=' main-banner md:flex items-center content-between justify-between my-10'>
+        <section className=' main-banner md:flex items-center content-between justify-between mb-30'>
             <div className='object'>
                 <img src="./images/doctor.png" alt="" height="10%" />
             </div>
@@ -11,8 +11,8 @@ const Banner = () => {
                 <h1 className='heading-text '>We Provide All Health Care Solution</h1>
                 <h6 className='main-banner-text'>Protect Your Health And <br /> Take Care To Of Your Health</h6><br />
                 <div className="">
-                    <a class="btn btn-secondary btn-lg shadow" href="/#">Read More</a>
-                    <a class="btn btn-secondary btn-lg shadow" href="/#">Read More</a>
+                    <a className="btn btn-secondary btn-lg shadow" href="/#">Read More</a>
+                    <a className="btn btn-secondary btn-lg shadow" href="/#">Read More</a>
                 </div>
             </div>
 

@@ -15,6 +15,10 @@
   background-position: bottom;
   
 }
+
+.object{
+  margin-top: 20px;
+}
 .main-banner-text{
   background-image: url("../../../../public/images/banner-bg.png");
     font-weight: 800;

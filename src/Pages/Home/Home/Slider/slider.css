@@ -35,7 +35,8 @@
   }
   
   .containerr {
-      margin-top: 50px;
+    margin-top: 150px;
+    margin-bottom: 150px;
     position: relative;
     width: 100%;
     height: auto;

@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-import { Navigation, Pagination, Scrollbar, A11y, controlled_swiper } from 'swiper';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -15,7 +15,7 @@ const Slider = () => {
 
   return (
     <center>
-      <div className=" containerr ">
+      <div className=" containerr">
         <Swiper effect={"coverflow"}
           centeredSlides={false}
 
@@ -36,14 +36,14 @@ const Slider = () => {
           navigation
           pagination={{ clickable: true }}
           scrollbar={{ draggable: true }}
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => console.log('slide change')}
+          // onSwiper={(swiper) => swiper}
+          // onSlideChange={() => console.log('slide change')}
 
         >
-          <SwiperSlide><center><img class="w-auto object  img " src="./images/doctor.png" alt="" /></center></SwiperSlide>
-          <SwiperSlide ><center><img class="w-auto object img " src="./images/doctor.png" alt="" /></center></SwiperSlide>
-          <SwiperSlide><center><img class="w-auto  object img " src="./images/doctor.png" alt="" /></center></SwiperSlide>
-          <SwiperSlide><center><img class="w-auto  object img " src="./images/doctor.png" alt="" /></center></SwiperSlide>
+          <SwiperSlide><center><img className="w-auto object  img " src="./images/doctor.png" alt="" /></center></SwiperSlide>
+          <SwiperSlide ><center><img className="w-auto object img " src="./images/doctor.png" alt="" /></center></SwiperSlide>
+          <SwiperSlide><center><img className="w-auto  object img " src="./images/doctor.png" alt="" /></center></SwiperSlide>
+          <SwiperSlide><center><img className="w-auto  object img " src="./images/doctor.png" alt="" /></center></SwiperSlide>
           ...
         </Swiper>
       </div>
