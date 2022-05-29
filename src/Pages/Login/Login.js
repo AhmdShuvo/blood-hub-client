@@ -1,59 +1,52 @@
-import React, { useState } from 'react';
-import $ from "jquery";
-import "./Login.scss"
-import { Link, NavLink } from 'react-router-dom';
+import React from 'react';
+import'./Login.css';
+const ContactUs = () => {
 
-const Login = () => {
-    const [email, setEmail] = useState()
-    const [passcode, setPasscode] = useState()
-
-    const handleSubmit = (e) => {
-        const loginData = {email, passcode}
-        console.log(loginData);
-        
-        e.preventDefault()
-    }
-
-
-
+// 	var NewComponent = React.createClass({
+//   render: function() {
     return (
-        <div>
-            <h2>Weekly Coding Challenge #1: Sign in/up Form</h2>
-            <div className="login-form-container" id="container">
-                <div className="form-container sign-in-container">
-                    <form onSubmit={handleSubmit}>
-                        <h1>Sign in</h1>
-                        <div className="social-container">
-                            <a href="#" className="social"><i className="fab fa-facebook-f"></i></a>
-                            <a href="#" className="social"><i className="fab fa-google-plus-g"></i></a>
-                            <a href="#" className="social"><i className="fab fa-linkedin-in"></i></a>
-                        </div>
-                        <span>or use your account</span>
-                        <input type="email" 
-                        name= "email"
-                        onChange = {(e) => setEmail(e.target.value) }
-                        placeholder="Email" required/>
-                        <input type="password"
-                        onChange = {(e) => setPasscode(e.target.value) }
-                        required
-                        placeholder="Password" />
-                        <a href="#">Forgot your password?</a>
-                        <button>Sign In</button>
-                    </form>
-                </div>
-                <div className="overlay-container">
-                    <div className="overlay">
-                        <div className="overlay-panel overlay-right">
-                            <h1>Hello, Friend!</h1>
-                            <p>Enter your personal details and start journey with us</p>
-                            <Link to="/signup"><button className="ghost" id="signUp" >Sign Up</button></Link>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+      <div className='body1'>
+        <title>Slide Navbar</title>
+        <link rel="stylesheet" type="text/css" href="slide navbar style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet" />
+        <div className="main">  	
+          <input type="checkbox" id="chk" aria-hidden="true" />
+          <div className="signup">
+            <form>
+              <label className="signclr" htmlFor="chk" aria-hidden="true">Sign up</label>
+              <input type="text" name="txt" placeholder="User name" required />
+              <input type="email" name="email" placeholder="Email" required />
+              <input type="password" name="pswd" placeholder="Password" required />
+              <button className='signclr2'>Sign up</button>
+            </form>
+          </div>
+          <div className="login">
+            <form>
+              <label htmlFor="chk" aria-hidden="true">Login</label>
+              <input type="email" name="email" placeholder="Email" required />
+              <input type="password" name="pswd" placeholder="Password" required />
+              <button>Login</button>
+            </form>
+          </div>
         </div>
+      </div>
     );
-};
+//   }
+// });
 
-export default Login;
+
+
+
+
+
+
+
+
+
+		}
+
+
+export default ContactUs;
+
+
+
