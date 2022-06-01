@@ -6,15 +6,9 @@
 	align-items: center;
 	min-height: 100vh;
 	font-family: 'Jost', sans-serif;
-	background-image:url("https://static.vecteezy.com/system/resources/previews/004/745/133/non_2x/infusion-in-circle-icon-intravenous-bag-blood-drip-in-round-shaped-medical-help-concept-illustration-can-be-used-for-topics-like-hospital-therapy-chemotherapy-iv-infuse-blood-bag-icon-free-vector.jpg") ;
-	/* background-image: url("https://media.istockphoto.com/photos/donate-writes-over-red-heart-shapes-hanging-over-red-background-picture-id1201142336?k=20&m=1201142336&s=612x612&w=0&h=Koyyf1PKHORujfL4LsXxGsGG0QH-9ciuGjb-9aRyn-M="); */
-	
-	background-repeat: no-repeat;
-	background-size: cover;
-
-
+	background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
 }
-.main{
+.main-section{
 	width: 350px;
 	height: 500px;
 	background: red;
@@ -23,29 +17,17 @@
 	border-radius: 10px;
 	box-shadow: 5px 20px 50px #000;
 }
-/* ------------------------------------------------------- */
-.signclr{
-    color: rgb(240, 125, 148);
-	size: 5px;
-}
-
-.signclr2{
-	size: 7px;
-}
-
-
-/* ------------------------------------------------------- */
 #chk{
 	display: none;
 }
-.signup{
+.signup-page{
 	position: relative;
 	width:100%;
 	height: 100%;
 }
-label{
+.lebel-cls{
 	color: #fff;
-	font-size: 3em;
+	font-size: 2.3em;
 	justify-content: center;
 	display: flex;
 	margin: 60px;
@@ -53,10 +35,10 @@ label{
 	cursor: pointer;
 	transition: .5s ease-in-out;
 }
-input{
+.input-box{
 	width: 60%;
-	height: 25px;
-	background: #ecdada;
+	height: 20px;
+	background: #e0dede;
 	justify-content: center;
 	display: flex;
 	margin: 20px auto;
@@ -65,16 +47,15 @@ input{
 	outline: none;
 	border-radius: 5px;
 }
-button{
+.button-design{
 	width: 60%;
 	height: 40px;
 	margin: 10px auto;
 	justify-content: center;
 	display: block;
-	color: rgb(185, 45, 45);
-	background: rgb(216, 202, 203);
-	font-size: 16px;
-	
+	color: #fff;
+	background: #573b8a;
+	font-size: 1em;
 	font-weight: bold;
 	margin-top: 20px;
 	outline: none;
@@ -83,31 +64,29 @@ button{
 	transition: .2s ease-in;
 	cursor: pointer;
 }
-button:hover{
-	background: rgb(247, 207, 210);
-	color: rgb(185, 45, 45);
-
-	
+.button-design:hover{
+	background: #6d44b8;
 }
-.login{
+.login-page{
 	height: 460px;
-	background: rgba(178, 225, 228, 0.959);
+	background: #eee;
 	border-radius: 60% / 10%;
 	transform: translateY(-180px);
 	transition: .8s ease-in-out;
 }
-.login label{
-	color:rgb(240, 125, 148) ;
+.login-page label{
+	color: #573b8a;
 	transform: scale(.6);
-	font-size: 3em;
 }
 
-#chk:checked ~ .login{
+#chk:checked ~ .login-page{
 	transform: translateY(-500px);
 }
-#chk:checked ~ .login label{
+#chk:checked ~ .login-page label{
 	transform: scale(1);	
 }
-#chk:checked ~ .signup label{
+#chk:checked ~ .signup-page label{
 	transform: scale(.6);
 }
+
+

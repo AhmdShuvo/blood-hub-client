@@ -43,20 +43,20 @@ const Contact = () => {
                                 className='contact-input'
                                 name="sender"
                                 onChange={(e) => setName(e.target.value)} required />
-                                <label>Name:</label>
+                                <label className='lebel-nam'>Name:</label>
                             </div>
                             <div className="form-item">
                                 <input type="text"
                                 className='contact-input' 
                                 name="email"
                                 onChange={(e) => setEmail(e.target.value)} required />
-                                <label>Email:</label>
+                                <label className='lebel-nam'>Email:</label>
                             </div>
                             <div className="form-item">
                                 <textarea className='contact-input' 
                                 name="message"
                                 onChange={(e) => setComments(e.target.value)} required></textarea>
-                                <label>Message:</label>
+                                <label className='lebel-nam'>Message:</label>
                             </div>
                             <button className="submit-btn">Send</button>
                         </form>
