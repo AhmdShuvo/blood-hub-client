@@ -9,9 +9,9 @@ import Header from './Pages/Common/Header/Header';
 import Home from './Pages/Home/Home/Home';
 import About from './Pages/About/About';
 import Contact from './Pages/Contact/Contact';
-import Login from './Pages/Login/Login';
+
 import Footer from './Pages/Common/Footer/Footer';
-import SignUp from './Pages/Login/SignUp';
+
 
 function App() {
   return (
@@ -23,8 +23,6 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<SignUp />} />
         </Routes>
         <Footer></Footer>
       </BrowserRouter>
