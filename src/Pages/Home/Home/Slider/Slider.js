@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import SwiperCore, { Navigation, Pagination, Scrollbar, A11y,Autoplay } from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -10,15 +10,16 @@ import 'swiper/scss';
 import 'swiper/scss/navigation';
 import 'swiper/scss/pagination';
 import './slider.css'
+import 'swiper/css/autoplay';
 import { EffectCoverflow } from 'swiper';
-const Slider = () => {
 
+const Slider = () => {
+  SwiperCore.use([Autoplay]);
   return (
     <center>
       <div className=" containerr">
         <Swiper effect={"coverflow"}
           centeredSlides={false}
-
           loop={true}
           coverflowEffect={{
             rotate: 50,
@@ -38,7 +39,7 @@ const Slider = () => {
           scrollbar={{ draggable: true }}
           // onSwiper={(swiper) => swiper}
           // onSlideChange={() => console.log('slide change')}
-
+         
         >
           <SwiperSlide><center><img className="w-auto object  img " src="./images/doctor.png" alt="" /></center></SwiperSlide>
           <SwiperSlide ><center><img className="w-auto object img " src="./images/doctor.png" alt="" /></center></SwiperSlide>
