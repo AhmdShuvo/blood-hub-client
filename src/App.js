@@ -11,6 +11,7 @@ import About from './Pages/About/About';
 import Contact from './Pages/Contact/Contact';
 
 import Footer from './Pages/Common/Footer/Footer';
+import Service from './Pages/Service/Service';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/service" element={<Service />} />
         </Routes>
         <Footer></Footer>
       </BrowserRouter>
