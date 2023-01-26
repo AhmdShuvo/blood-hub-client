@@ -1,0 +1,178 @@
+[
+  {
+    "name": "John E.goulet",
+    "email": "john@gmail.com",
+    "contact": "9898909878",
+    "country": "US",
+    "currency": "USD",
+    "group": "A",
+    "created": "5 Year(s) ago",
+    "lastLogin": "3 Year(s) ago",
+    "status": "Active"
+  },
+  {
+    "name": "Ram Kumar",
+    "email": "john@gmail.com",
+    "contact": "9898909878",
+    "country": "US",
+    "currency": "USD",
+    "group": "B",
+    "created": "5 Year(s) ago",
+    "lastLogin": "1 Year(s) ago",
+    "status": "Pending"
+  },
+  {
+    "name": "Shyam Kumar",
+    "email": "john@gmail.com",
+    "contact": "9898909878",
+    "country": "IN",
+    "currency": "INR",
+    "group": "C",
+    "created": "5 Year(s) ago",
+    "lastLogin": "3 Year(s) ago",
+    "status": "Suspended"
+  },
+  {
+    "name": "Radhe Shyam",
+    "email": "john@gmail.com",
+    "contact": "9898909878",
+    "country": "IN",
+    "currency": "INR",
+    "group": "A",
+    "created": "5 Year(s) ago",
+    "lastLogin": "3 Year(s) ago",
+    "status": "Blocked"
+  },
+  {
+    "name": "Mohan Kumar",
+    "email": "john@gmail.com",
+    "contact": "9898909878",
+    "country": "IN",
+    "currency": "INR",
+    "group": "B",
+    "created": "5 Year(s) ago",
+    "lastLogin": "3 Year(s) ago",
+    "status": "Active"
+  },
+  {
+    "name": "Suresh Kumar",
+    "email": "john@gmail.com",
+    "contact": "9898909878",
+    "country": "IN",
+    "currency": "INR",
+    "group": "C",
+    "created": "5 Year(s) ago",
+    "lastLogin": "3 Year(s) ago",
+    "status": "Pending"
+  },
+  {
+    "name": "Rani Devi",
+    "email": "john@gmail.com",
+    "contact": "9898909878",
+    "country": "IN",
+    "currency": "INR",
+    "group": "A",
+    "created": "5 Year(s) ago",
+    "lastLogin": "3 Year(s) ago",
+    "status": "Suspended"
+  },
+  {
+    "name": "Shekhar",
+    "email": "john@gmail.com",
+    "contact": "9898909878",
+    "country": "IN",
+    "currency": "INR",
+    "group": "B",
+    "created": "5 Year(s) ago",
+    "lastLogin": "2 Year(s) ago",
+    "status": "Blocked"
+  },
+  {
+    "name": "Devanand",
+    "email": "john@gmail.com",
+    "contact": "9898909878",
+    "country": "IN",
+    "currency": "INR",
+    "group": "C",
+    "created": "5 Year(s) ago",
+    "lastLogin": "3 Year(s) ago",
+    "status": "Active"
+  },
+  {
+    "name": "Rajesh Mishra",
+    "email": "john@gmail.com",
+    "contact": "9898909878",
+    "country": "IN",
+    "currency": "INR",
+    "group": "A",
+    "created": "5 Year(s) ago",
+    "lastLogin": "3 Year(s) ago",
+    "status": "Suspended"
+  },
+  {
+    "name": "Om Prakash",
+    "email": "john@gmail.com",
+    "contact": "9898909878",
+    "country": "IN",
+    "currency": "INR",
+    "group": "B",
+    "created": "5 Year(s) ago",
+    "lastLogin": "3 Year(s) ago",
+    "status": "Blocked"
+  },
+  {
+    "name": "Raj",
+    "email": "john@gmail.com",
+    "contact": "9898909878",
+    "country": "IN",
+    "currency": "INR",
+    "group": "C",
+    "created": "5 Year(s) ago",
+    "lastLogin": "3 Year(s) ago",
+    "status": "Pending"
+  },
+  {
+    "name": "Narayan Das",
+    "email": "john@gmail.com",
+    "contact": "9898909878",
+    "country": "IN",
+    "currency": "INR",
+    "group": "C",
+    "created": "5 Year(s) ago",
+    "lastLogin": "3 Year(s) ago",
+    "status": "Active"
+  },
+  {
+    "name": "Rekha",
+    "email": "john@gmail.com",
+    "contact": "9898909878",
+    "country": "IN",
+    "currency": "INR",
+    "group": "B",
+    "created": "5 Year(s) ago",
+    "lastLogin": "3 Year(s) ago",
+    "status": "Active"
+  },
+  {
+    "name": "Ajay Sharma",
+    "email": "john@gmail.com",
+    "contact": "9898909878",
+    "country": "IN",
+    "currency": "INR",
+    "group": "A",
+    "created": "5 Year(s) ago",
+    "lastLogin": "3 Year(s) ago",
+    "status": "Active"
+  },
+  {
+    "name": "Ram Kishan",
+    "email": "john@gmail.com",
+    "contact": "9898909878",
+    "country": "US",
+    "currency": "USD",
+    "group": "B",
+    "created": "5 Year(s) ago",
+    "lastLogin": "3 Year(s) ago",
+    "status": "Active"
+  }
+]
