@@ -41,7 +41,7 @@ const Slider = () => {
           // onSlideChange={() => console.log('slide change')}
          
         >
-          <SwiperSlide><center><img className="w-auto object  img " src="./images/doctor.png" alt="" /></center></SwiperSlide>
+          <SwiperSlide><center><img className="w-auto object  img " src="https://thalassaemia.org.cy/wp-content/uploads/2021/06/WBDD-Visual-3.png" alt="" /></center></SwiperSlide>
           <SwiperSlide ><center><img className="w-auto object img " src="./images/doctor.png" alt="" /></center></SwiperSlide>
           <SwiperSlide><center><img className="w-auto  object img " src="./images/doctor.png" alt="" /></center></SwiperSlide>
           <SwiperSlide><center><img className="w-auto  object img " src="./images/doctor.png" alt="" /></center></SwiperSlide>

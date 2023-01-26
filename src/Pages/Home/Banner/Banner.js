@@ -5,14 +5,14 @@ const Banner = () => {
     return (
         <section className=' main-banner md:flex items-center content-between justify-between mb-30'>
             <div className='object'>
-                <img src="./images/doctor.png" alt="" height="10%" />
+                <img src="./images/hero/banner.png" alt="" width="100%" />
             </div>
-            <div style={{ display: 'block' }}>
-                <h1 className='heading-text '>We Provide All Health Care Solution</h1>
-                <h6 className='main-banner-text'>Protect Your Health And <br /> Take Care To Of Your Health</h6><br />
+            <div style={{ display: 'block',width:'50%' }}>
+                <h1 className='heading-text '>We Provide  Donation Solutions</h1>
+                <h6 className='main-banner-text'>Be the reason for someone's heartbeat.</h6><br />
                 <div className="">
-                    <a className="btn btn-secondary btn-lg shadow" href="/#">Read More</a>
-                    <a className="btn btn-secondary btn-lg shadow" href="/#">Read More</a>
+                    <a className="btn btn-secondary btn-lg shadow" href="/#">Get Started As A Donor</a>
+                    <a className="btn btn-secondary btn-lg shadow" href="/service">Find A Donor</a>
                 </div>
             </div>
 

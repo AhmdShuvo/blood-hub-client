@@ -5,10 +5,11 @@
     "contact": "9898909878",
     "country": "US",
     "currency": "USD",
-    "group": "A",
+    "group": "A+",
     "created": "5 Year(s) ago",
     "lastLogin": "3 Year(s) ago",
-    "status": "Active"
+    "status": "Active",
+    "address":"mirpur 10"
   },
   {
     "name": "Ram Kumar",
@@ -19,7 +20,8 @@
     "group": "B",
     "created": "5 Year(s) ago",
     "lastLogin": "1 Year(s) ago",
-    "status": "Pending"
+    "status": "Pending",
+    "address":"mirpur 15"
   },
   {
     "name": "Shyam Kumar",
@@ -30,7 +32,8 @@
     "group": "C",
     "created": "5 Year(s) ago",
     "lastLogin": "3 Year(s) ago",
-    "status": "Suspended"
+    "status": "Suspended",
+    "address":"mirpur 10"
   },
   {
     "name": "Radhe Shyam",
@@ -41,7 +44,8 @@
     "group": "A",
     "created": "5 Year(s) ago",
     "lastLogin": "3 Year(s) ago",
-    "status": "Blocked"
+    "status": "Blocked",
+    "address":"mirpur 12"
   },
   {
     "name": "Mohan Kumar",
@@ -52,7 +56,8 @@
     "group": "B",
     "created": "5 Year(s) ago",
     "lastLogin": "3 Year(s) ago",
-    "status": "Active"
+    "status": "Active",
+    "address":"mirpur 14"
   },
   {
     "name": "Suresh Kumar",
@@ -63,7 +68,8 @@
     "group": "C",
     "created": "5 Year(s) ago",
     "lastLogin": "3 Year(s) ago",
-    "status": "Pending"
+    "status": "Pending",
+    "address":"mirpur 10"
   },
   {
     "name": "Rani Devi",
@@ -74,7 +80,8 @@
     "group": "A",
     "created": "5 Year(s) ago",
     "lastLogin": "3 Year(s) ago",
-    "status": "Suspended"
+    "status": "Suspended",
+    "address":"mirpur dohs"
   },
   {
     "name": "Shekhar",
@@ -85,7 +92,8 @@
     "group": "B",
     "created": "5 Year(s) ago",
     "lastLogin": "2 Year(s) ago",
-    "status": "Blocked"
+    "status": "Blocked",
+    "address":"mirpur 11.5"
   },
   {
     "name": "Devanand",
@@ -96,7 +104,8 @@
     "group": "C",
     "created": "5 Year(s) ago",
     "lastLogin": "3 Year(s) ago",
-    "status": "Active"
+    "status": "Active",
+    "address":"mirpur 13" 
   },
   {
     "name": "Rajesh Mishra",
@@ -107,7 +116,8 @@
     "group": "A",
     "created": "5 Year(s) ago",
     "lastLogin": "3 Year(s) ago",
-    "status": "Suspended"
+    "status": "Suspended",
+    "address":"mirpur 12"
   },
   {
     "name": "Om Prakash",
@@ -118,7 +128,8 @@
     "group": "B",
     "created": "5 Year(s) ago",
     "lastLogin": "3 Year(s) ago",
-    "status": "Blocked"
+    "status": "Blocked",
+    "address":"mirpur 14"
   },
   {
     "name": "Raj",
@@ -129,7 +140,8 @@
     "group": "C",
     "created": "5 Year(s) ago",
     "lastLogin": "3 Year(s) ago",
-    "status": "Pending"
+    "status": "Pending",
+    "address":"mirpur 10"
   },
   {
     "name": "Narayan Das",
@@ -140,7 +152,8 @@
     "group": "C",
     "created": "5 Year(s) ago",
     "lastLogin": "3 Year(s) ago",
-    "status": "Active"
+    "status": "Active",
+    "address":"mirpur 11"
   },
   {
     "name": "Rekha",
@@ -151,7 +164,8 @@
     "group": "B",
     "created": "5 Year(s) ago",
     "lastLogin": "3 Year(s) ago",
-    "status": "Active"
+    "status": "Active",
+    "address":"mirpur 10"
   },
   {
     "name": "Ajay Sharma",
@@ -162,7 +176,8 @@
     "group": "A",
     "created": "5 Year(s) ago",
     "lastLogin": "3 Year(s) ago",
-    "status": "Active"
+    "status": "Active",
+    "address":"mirpur 14"
   },
   {
     "name": "Ram Kishan",
@@ -173,6 +188,7 @@
     "group": "B",
     "created": "5 Year(s) ago",
     "lastLogin": "3 Year(s) ago",
-    "status": "Active"
+    "status": "Active",
+    "address":"mirpur 13"
   }
 ]
