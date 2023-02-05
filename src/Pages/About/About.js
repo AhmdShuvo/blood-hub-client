@@ -60,7 +60,7 @@ const About = () => {
                 </div>
                 <ul className="social">
                   <li><a href="https://github.com/AhmdShuvo" className="fa fa-github" aria-hidden="true"></a></li>
-                  <li><a href="https://www.linkedin.com/in/tanjir-ahmed-a4216a199/" className="fa fa-linkedin" aria-hidden="true"></a></li>
+                  <li><a href="https://www.linkedin.com/in/tanjir-ahmd/" className="fa fa-linkedin" aria-hidden="true"></a></li>
                 </ul>
               </div>
             </div>

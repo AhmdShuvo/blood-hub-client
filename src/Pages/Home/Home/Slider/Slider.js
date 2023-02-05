@@ -42,9 +42,9 @@ const Slider = () => {
          
         >
           <SwiperSlide><center><img className="w-auto object  img " src="https://thalassaemia.org.cy/wp-content/uploads/2021/06/WBDD-Visual-3.png" alt="" /></center></SwiperSlide>
-          <SwiperSlide ><center><img className="w-auto object img " src="./images/doctor.png" alt="" /></center></SwiperSlide>
-          <SwiperSlide><center><img className="w-auto  object img " src="./images/doctor.png" alt="" /></center></SwiperSlide>
-          <SwiperSlide><center><img className="w-auto  object img " src="./images/doctor.png" alt="" /></center></SwiperSlide>
+          <SwiperSlide ><center><img className="w-auto object img " src="https://www.starhealth.in/blog/wp-content/uploads/2022/03/Blood-donation.jpg" alt="" /></center></SwiperSlide>
+          <SwiperSlide><center><img className="w-auto  object img " src="https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2022/06/world-blood-donor-day-1655115531.jpg" alt="" /></center></SwiperSlide>
+          <SwiperSlide><center><img className="w-auto  object img " src="https://motivirus.com/wp-content/uploads/2019/02/Motivational-Blood-donation-quotes-and-slogans.jpg" alt="" /></center></SwiperSlide>
           ...
         </Swiper>
       </div>

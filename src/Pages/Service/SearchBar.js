@@ -11,7 +11,7 @@ const SearchBar = ({setSearchText}) => {
            <div className='md:flex items-center w-11/12 justify-between'>
            <div className="flex  p-4 w-full space-x-4 rounded-lg">
              
-              <input onChange={(e)=>setSearchText(e.target.value)} className="bg-gray-100 w-full outline-none border-none" type="text" placeholder="Search By Location..." />
+              <input onChange={(e)=>setSearchText(e.target.value)} className="bg-gray-100 w-full outline-none border-none" type="text" placeholder="Search By Location Or By Blood Group..." />
             </div>
          
             <div className="bg-red-600 py-3 px-5 text-white font-semibold rounded-lg hover:shadow-lg transition duration-3000 cursor-pointer">

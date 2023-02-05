@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Pagination from './Pagination';
+import Profile from './Profile';
 import SearchBar from './SearchBar';
 
 const Service = () => {
@@ -33,19 +34,9 @@ const Service = () => {
             <SearchBar setSearchText={setSearchText} />
             <div className="grid md:grid-cols-3 ms-5 gap-1 ml-8">
             {
-                services.slice(startIndex,lastIndex).map(service=><a
-                    href=" #" 
-                    className="block p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
-                  >
-                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                     {service.name} {service.group} <br />
-                     {service.address}
-                    </h5>
-                    <p className="font-normal text-gray-700 dark:text-gray-400">
-                      Here are the biggest enterprise technology acquisitions of 2021 so far, in
-                      reverse chronological order.
-                    </p>
-                  </a>
+                services.slice(startIndex,lastIndex).map((service,index)=><Profile key={service.index}
+                donor={service}
+                />
                   )
             }
             </div>

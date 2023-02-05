@@ -8,7 +8,7 @@ const Banner = () => {
                 <img src="./images/hero/banner.png" alt="" width="100%" />
             </div>
             <div style={{ display: 'block',width:'50%' }}>
-                <h1 className='heading-text '>We Provide  Donation Solutions</h1>
+                <h1 className='heading-text '> </h1>
                 <h6 className='main-banner-text'>Be the reason for someone's heartbeat.</h6><br />
                 <div className="">
                     <a className="btn btn-secondary btn-lg shadow" href="/#">Get Started As A Donor</a>

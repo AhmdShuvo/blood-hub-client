@@ -43,7 +43,7 @@ const Contact = () => {
                                 className='contact-input'
                                 name="sender"
                                 onChange={(e) => setName(e.target.value)} required />
-                                <label className='.label'>Name:</label>
+                                <label className='label'>Name:</label>
                             </div>
                             <div className="form-item">
                                 <input type="text"
