@@ -12,11 +12,16 @@ import Contact from './Pages/Contact/Contact';
 
 import Footer from './Pages/Common/Footer/Footer';
 import Service from './Pages/Service/Service';
+import SignUp from './Pages/Login/SignUp';
+import NotFound from './Pages/NotFound/NotFound';
+import AuthProvider from './Contexts/AuthProvider';
+import Login from './Pages/Login/Login';
 
 
 function App() {
   return (
-    <div className="">
+    
+       <AuthProvider>
       <BrowserRouter>
         <Header></Header>
         
@@ -25,13 +30,17 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/service" element={<Service />} />
-          <Route path="details/:name" element={<Service />} />
+          <Route path="/details/:name" element={<Service />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/login" element={<Login />} />
+          <Route path='*' element={<NotFound/>}/>
         </Routes>
         <Footer></Footer>
       </BrowserRouter>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
-    </div>
+    
+    </AuthProvider>
   );
 }
 

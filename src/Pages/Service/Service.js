@@ -14,7 +14,7 @@ const Service = () => {
     const startIndex=lastIndex-postPerPage;
     const isValidSearch = (row, searchText) => {
       const text = searchText.trim().toLowerCase()
-      console.log(row.name);
+      
       return  row.group.toLowerCase().includes(text) || row.address.toLowerCase().includes(text);
   };
   
@@ -24,20 +24,25 @@ const Service = () => {
     },[])
     useEffect(() => {
       const filteredRows = services.filter((row) => isValidSearch(row, searchText))
-      searchText?setServices(filteredRows): fetch('./clientlist.json').then(res=>res.json()).then(data=>setServices(data))
+      searchText&&setDonors(filteredRows)
       console.log(filteredRows);
      
-  }, [searchText])
+  }, [searchText,donors,services])
+  
     return (
         <>
         <section className='search-bar mb-24'>
             <SearchBar setSearchText={setSearchText} />
             <div className="grid md:grid-cols-3 ms-5 gap-1 ml-8">
             {
-                services.slice(startIndex,lastIndex).map((service,index)=><Profile key={service.index}
+               searchText? donors.slice(startIndex,lastIndex).map((service,index)=><Profile key={index}
                 donor={service}
                 />
                   )
+                  :services.slice(startIndex,lastIndex).map((service,index)=><Profile key={index}
+                  donor={service}
+                  />
+                    )
             }
             </div>
             {/* Pagination / */}

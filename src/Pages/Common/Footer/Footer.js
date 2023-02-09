@@ -20,33 +20,33 @@ const Footer = () => {
                 {/* <!--Waves Container--> */}
                 <div>
                    
-                        <div class="md:flex md:justify-between p-4">
-                            <div class="mb-6 md:mb-0">
-                                <a href="https://flowbite.com" class="flex items-center">
-                                    <img src="https://i.ibb.co/6ZXnS2b/logo-bloodhub-removebg-preview.png" class="mr-3 h-8" alt="FlowBite Logo" />
-                                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Blood Hub</span>
+                        <div className="md:flex md:justify-between p-4">
+                            <div className="mb-6 md:mb-0">
+                                <a href="https://flowbite.com" className="flex items-center">
+                                    <img src="https://i.ibb.co/6ZXnS2b/logo-bloodhub-removebg-preview.png" className="mr-3 h-8" alt="FlowBite Logo" />
+                                    <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Blood Hub</span>
                                 </a>
                             </div>
-                            <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                            <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                                 <div>
-                                    <h2 class="mb-6 text-sm font-semibold text-white-900 uppercase dark:text-white">Resources</h2>
-                                    <ul class="text-white-600 dark:text-white-400">
-                                        <li class="mb-4">
-                                            <a href="https://flowbite.com" class="hover:underline">Flowbite</a>
+                                    <h2 className="mb-6 text-sm font-semibold text-white-900 uppercase dark:text-white">Resources</h2>
+                                    <ul className="text-white-600 dark:text-white-400">
+                                        <li className="mb-4">
+                                            <a href="https://flowbite.com" className="hover:underline">Flowbite</a>
                                         </li>
                                         <li>
-                                            <a href="https://tailwindcss.com/" class="hover:underline">Tailwind CSS</a>
+                                            <a href="https://tailwindcss.com/" className="hover:underline">Tailwind CSS</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <div>
-                                    <h2 class="mb-6 text-sm font-semibold text-white-900 uppercase dark:text-white">Follow us</h2>
-                                    <ul class="text-white-600 dark:text-gray-400">
-                                        <li class="mb-4">
-                                            <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Github</a>
+                                    <h2 className="mb-6 text-sm font-semibold text-white-900 uppercase dark:text-white">Follow us</h2>
+                                    <ul className="text-white-600 dark:text-gray-400">
+                                        <li className="mb-4">
+                                            <a href="https://github.com/themesberg/flowbite" className="hover:underline ">Github</a>
                                         </li>
                                         <li>
-                                            <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Discord</a>
+                                            <a href="https://discord.gg/4eeurUVvTy" className="hover:underline">Discord</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -64,7 +64,7 @@ const Footer = () => {
                             <use xlinkHref="#gentle-wave" x="48" y="7" fill="#fff" />
                         </g>
                     </svg>
-                    <h6 className='p-3'> copyright <i class="fa fa-copyright" aria-hidden="true"> blood Hub 2022 </i></h6>
+                    <h6 className='p-3'> copyright <i className="fa fa-copyright" aria-hidden="true"> blood Hub 2022 </i></h6>
                 </div>
             </section>
 

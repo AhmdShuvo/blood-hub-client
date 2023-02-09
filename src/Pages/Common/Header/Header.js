@@ -1,8 +1,11 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import useAuth from '../../../Hooks/useAuth';
+import Avater from './Avater';
 import "./Header.scss"
 
 const Header = () => {
+    const {user,LogOUt}=useAuth()
     return (
         <div className='navContainer sticky top-0 z-50'>
             <nav className="  z-50 w-full bg-tranparent border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-red-800 w-100 " >
@@ -34,9 +37,15 @@ const Header = () => {
                                 <NavLink as={Link} to="/contact" style={{ textDecoration: "none", fontWeight: "bold" }} className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</NavLink>
                             </li>
                             <li>
-                                <NavLink as={Link} to="/login" style={{ textDecoration: "none", fontWeight: "bold" }} className="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Login</NavLink>
+                                {user.email?<Link  onClick={LogOUt} to="/" style={{ textDecoration: "none", fontWeight: "bold" }} className="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Sign Out</Link>:<Link as={Link} to="/login" style={{ textDecoration: "none", fontWeight: "bold" }} className="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Sign in</Link>}
                             </li>
+                           {user.email&& <li>
+                            <Avater user={user} logOut={LogOUt}/>
+                            
+
+                            </li>}
                         </ul>
+                        
                     </div>
                 </div>
             </nav>

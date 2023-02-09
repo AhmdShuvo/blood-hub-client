@@ -15,7 +15,7 @@ const SearchBar = ({setSearchText}) => {
             </div>
          
             <div className="bg-red-600 py-3 px-5 text-white font-semibold rounded-lg hover:shadow-lg transition duration-3000 cursor-pointer">
-              <button type='submit'> <i class="fa-solid fa-magnifying-glass"></i></button>
+              <button type='submit'> <i className="fa-solid fa-magnifying-glass"></i></button>
             </div>
            </div>
           </div>

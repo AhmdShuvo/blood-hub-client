@@ -11,7 +11,7 @@ const Banner = () => {
                 <h1 className='heading-text '> </h1>
                 <h6 className='main-banner-text'>Be the reason for someone's heartbeat.</h6><br />
                 <div className="">
-                    <a className="btn btn-secondary btn-lg shadow" href="/#">Get Started As A Donor</a>
+                    <a className="btn btn-secondary btn-lg shadow" href="/signup">Get Started As A Donor</a>
                     <a className="btn btn-secondary btn-lg shadow" href="/service">Find A Donor</a>
                 </div>
             </div>

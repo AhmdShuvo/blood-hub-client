@@ -10,7 +10,7 @@ const Contact = () => {
 
     const handleSubmit  = e =>{
         const newData = {name, email, comments}
-        console.log(newData);
+       
         e.preventDefault()
     }
     return (

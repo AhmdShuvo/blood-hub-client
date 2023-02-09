@@ -2,7 +2,7 @@ import React from 'react';
 import './NotFound.css'
 const NotFound = () => {
     return (
-        <div>
+        <div className='body'>
             {/* var NewComponent = React.createClass({
   render: function() {
     return ( */}
