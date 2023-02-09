@@ -41,6 +41,7 @@
   padding: 15px 30px;
   border-radius: 8px;
   text-decoration: none;
+  width: auto;
   font-weight: 500;
   font-size: 14px;
   transition: all .5s;
@@ -51,10 +52,3 @@
   background-color:#f88b4b ;
 }
 
-@media only screen and (max-width: 600px) {
-.main-banner-text{
-    background-color: lightblue;
-    
-    opacity: 1;
-  }
-}
