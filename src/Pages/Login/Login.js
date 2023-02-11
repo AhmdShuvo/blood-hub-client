@@ -5,13 +5,14 @@ import useAuth from '../../Hooks/useAuth'
 
 
 const Login = () => {
-	const { user,Login, setIsLoadng,} = useAuth()
+	const { user,Login, setIsLoadng} = useAuth()
 	const [logInData, setData] = useState({})
 	const [err,setError]=useState('')
 
 	
 	const location = useLocation()
 	const history = useNavigate()
+user.email&& history('/donors')
 
 	const handleChange = e => {
 		const field = e.target.name
@@ -31,7 +32,7 @@ const Login = () => {
 		  // Signed in 
 		  setIsLoadng(false);
 		  const user = userCredential.user;
-		  history('/service')
+		  history('/donors')
 	
 		  // ...
 		})
@@ -67,7 +68,7 @@ const Login = () => {
                     Password
                   </label>
                   <input onChange={handleChange} name="password" className="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border border-red-500 rounded shadow appearance-none focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="******************" />
-                  {err&& <p className="text-xs italic text-red-500">Please choose a password.</p>}
+                  {err&& <p className="text-xs italic text-red-500">{err}</p>}
                 </div>
                 <div className="mb-4">
                   <input className="mr-2 leading-tight" type="checkbox" id="checkbox_id" />
@@ -87,7 +88,7 @@ const Login = () => {
                   </Link>
                 </div>
                 <div className="text-center">
-                  <a className="inline-block text-sm text-blue-500 align-baseline hover:text-blue-800" href="#">
+                  <a href="resetpass" className="inline-block text-sm text-blue-500 align-baseline hover:text-blue-800" >
                     Forgot Password?
                   </a>
                 </div>

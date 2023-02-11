@@ -12,16 +12,17 @@ const Service = () => {
     
     const lastIndex=currentpost * postPerPage;
     const startIndex=lastIndex-postPerPage;
+  
+  
+    
+    useEffect(()=>{
+      fetch('http://localhost:9000/donors').then(res=>res.json()).then(data=>setServices(data.reverse()))
+    },[])
     const isValidSearch = (row, searchText) => {
       const text = searchText.trim().toLowerCase()
       
       return  row.group.toLowerCase().includes(text) || row.address.toLowerCase().includes(text);
   };
-  
-    
-    useEffect(()=>{
-      fetch('./clientlist.json').then(res=>res.json()).then(data=>setServices(data))
-    },[])
     useEffect(() => {
       const filteredRows = services.filter((row) => isValidSearch(row, searchText))
       searchText&&setDonors(filteredRows)

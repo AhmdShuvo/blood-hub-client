@@ -9,16 +9,18 @@ import {
   updateProfile,
   signInWithPopup,
   GoogleAuthProvider,
-  FacebookAuthProvider
+  FacebookAuthProvider,
+  sendPasswordResetEmail
 } from 'firebase/auth';
 
 import { useNavigate } from 'react-router-dom';
 import initializeFirebase from '../Firebase/Firebase.init';
-
-
+import { getStorage } from 'firebase/storage';
 
 
 initializeFirebase();
+export const storage = getStorage(initializeFirebase());
+
 const useFirebase = () => {
   const [error, setError] = useState('');
   const [isLoading, setIsLoadng] = useState(true);
@@ -48,7 +50,7 @@ const useFirebase = () => {
         setUser(newUser);
 
         // UPdate user In FIrebse //
-        updateProfile(auth.currentUser, {
+       updateProfile(auth.currentUser, {
           displayName: name,
         photoURL:photourl
         })
@@ -118,10 +120,46 @@ const useFirebase = () => {
     return () => unSubscribe;
   }, []);
 
+  const UpdateUser=(photo,name)=>{
+    updateProfile(auth.currentUser, {
+    
+      photoURL: photo||auth.currentUser.photoURL
+    }).then(() => {
+      // Profile updated!
+      // ...
+    }).catch((error) => {
+      // An error occurred
+      // ...
+    });
+  }
+  const UpdateName=(name)=>{
+    updateProfile(auth.currentUser, {
+    
+      displayName:name
+    }).then(() => {
+      // Profile updated!
+      // ...
+    }).catch((error) => {
+      // An error occurred
+      // ...
+    });
+  }
+const resetPass=(email)=>{
+  sendPasswordResetEmail(auth, email)
+  .then(() => {
+    // Password reset email sent!
+    // ..
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    // ..
+  });
+}
   const saveUsertoDb = (email, displayName,password,address,group,facebook,phone,age,lastdonation) => {
     const user = { email, displayName,password,address,group,facebook,phone,age,lastdonation };
  console.log(user)
-    fetch('https://next-gen-games-server.vercel.app/users', {
+    fetch('http://localhost:9000/donors', {
       method: 'POST',
       headers: { 'content-type': 'application/json' },
       body: JSON.stringify(user),
@@ -130,7 +168,7 @@ const useFirebase = () => {
   const saveGoogleUsertoDb = (email, displayName) => {
     const user = { email, displayName };
 
-    fetch('https://next-gen-games-server.vercel.app/users', {
+    fetch('http://localhost:9000/donors', {
       method: 'POST',
       headers: { 'content-type': 'application/json' },
       body: JSON.stringify(user),
@@ -152,6 +190,9 @@ const useFirebase = () => {
     saveUsertoDb,
     saveGoogleUsertoDb,
     admin,
+    UpdateUser,
+    UpdateName,
+    resetPass,
     facebookLogin,
   };
 };
