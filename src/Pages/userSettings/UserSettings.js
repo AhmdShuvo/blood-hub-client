@@ -21,7 +21,7 @@ const UserSettings = () => {
     
 
     useEffect(()=>{
-        fetch(`http://localhost:9000/user/${email}`).then(res=>res.json()).then(data=>setdonors(data))
+        fetch(`https://blood-hub-server.vercel.app/user/${email}`).then(res=>res.json()).then(data=>setdonors(data))
         donors.map(donor=>setdonor(donor))
 
         
@@ -51,7 +51,7 @@ const UserSettings = () => {
    }
    UpdateName(userData.username)
 
-        fetch(`http://localhost:9000/donor/${donor._id}`, {
+        fetch(`https://blood-hub-server.vercel.app/donor/${donor._id}`, {
             method: 'PUT',
             headers: {
               'Content-Type': 'application/json',

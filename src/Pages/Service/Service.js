@@ -16,7 +16,7 @@ const Service = () => {
   
     
     useEffect(()=>{
-      fetch('http://localhost:9000/donors').then(res=>res.json()).then(data=>setServices(data.reverse()))
+      fetch('https://blood-hub-server.vercel.app/donors').then(res=>res.json()).then(data=>setServices(data.reverse()))
     },[])
     const isValidSearch = (row, searchText) => {
       const text = searchText.trim().toLowerCase()
