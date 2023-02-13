@@ -159,7 +159,7 @@ const resetPass=(email)=>{
   const saveUsertoDb = (email, displayName,password,address,group,facebook,phone,age,lastdonation) => {
     const user = { email, displayName,password,address,group,facebook,phone,age,lastdonation };
  console.log(user)
-    fetch('https://blood-hub-server.vercel.app/donors', {
+    fetch('http://localhost:9000/donors', {
       method: 'POST',
       headers: { 'content-type': 'application/json' },
       body: JSON.stringify(user),
@@ -168,7 +168,7 @@ const resetPass=(email)=>{
   const saveGoogleUsertoDb = (email, displayName) => {
     const user = { email, displayName };
 
-    fetch('https://blood-hub-server.vercel.app/donors', {
+    fetch('http://localhost:9000/donors', {
       method: 'POST',
       headers: { 'content-type': 'application/json' },
       body: JSON.stringify(user),

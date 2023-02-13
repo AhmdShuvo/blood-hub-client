@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useEffect } from 'react';
 import Marquee from "react-fast-marquee";
+import Ratings from './Rating';
 import "./Review.css"
 
 
 const Review = () => {
+    const [ratings,setRatings]=useState([])
+
+    useEffect(()=>{
+        fetch('http://localhost:9000/ratings').then(res=>res.json()).then(data=>setRatings(data))
+
+    },[])
+
 
     return (
         <div className='my-32'>
@@ -12,61 +21,10 @@ const Review = () => {
             </h1>
             <Marquee pauseOnHover="false" speed="80">
 
-                <div className='review-container g-6'>
-                    <div className="card">
-                        <div className="image">
-                            <img href="#" src="https://i.pinimg.com/originals/a4/7b/a5/a47ba59b4a353e0928ef0551ca44f980.jpg" alt='' />
-                        </div>
-                        <div className="content">
-                            <h3>This is content</h3>
-                            <p>DIn publishing and graphic design,           Lorem ipsum is a placeholder text               commonly used to demonstrate the visual         form of a document or a typeface without         relying on meaningful content.</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="review-container">
-                    <div className="card">
-                        <div className="image">
-                            <img href="#" src="https://cdn.pixabay.com/photo/2022/03/24/14/42/animal-7089224_960_720.jpg" alt='' />
-                        </div>
-                        <div className="content">
-                            <h3>This is content</h3>
-                            <p>DIn publishing and graphic design,           Lorem ipsum is a placeholder text               commonly used to demonstrate the visual         form of a document or a typeface without         relying on meaningful content.</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="review-container">
-                    <div className="card">
-                        <div className="image">
-                            <img href="#" src="https://cdn.pixabay.com/photo/2014/04/13/20/49/cat-323262_960_720.jpg" alt='' />
-                        </div>
-                        <div className="content">
-                            <h3>This is content</h3>
-                            <p>DIn publishing and graphic design,           Lorem ipsum is a placeholder text               commonly used to demonstrate the visual         form of a document or a typeface without         relying on meaningful content.</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="review-container">
-                    <div className="card">
-                        <div className="image">
-                            <img href="#" src="https://i.pinimg.com/originals/a4/7b/a5/a47ba59b4a353e0928ef0551ca44f980.jpg" alt='' />
-                        </div>
-                        <div className="content">
-                            <h3>This is content</h3>
-                            <p>DIn publishing and graphic design,           Lorem ipsum is a placeholder text               commonly used to demonstrate the visual         form of a document or a typeface without         relying on meaningful content.</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="review-container">
-                    <div className="card">
-                        <div className="image">
-                            <img href="#" src="https://cdn.pixabay.com/photo/2014/04/13/20/49/cat-323262_960_720.jpg" alt='' />
-                        </div>
-                        <div className="content">
-                            <h3>This is content</h3>
-                            <p>DIn publishing and graphic design,           Lorem ipsum is a placeholder text               commonly used to demonstrate the visual         form of a document or a typeface without         relying on meaningful content.</p>
-                        </div>
-                    </div>
-                </div>
+              {
+                ratings.map(rating=><Ratings rating={rating}/>)
+              }
+                
 
 
             </Marquee>

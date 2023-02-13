@@ -1,7 +1,6 @@
 [
   {
-    "name": "John E.goulet",
-    
+    "displayName": "John E.goulet",
     "facebook":"https://www.facebook.com/",
     "email":"john@gmail.com",
     "country": "US",
@@ -13,7 +12,7 @@
     "address":"mirpur 10"
   },
   {
-    "name": "Ram Kumar",
+    "displayName": "Ram Kumar",
     "email": "john@gmail.com",
     "facebook":"https://www.facebook.com/",
     "phone": "9898909878",
@@ -26,7 +25,7 @@
     "address":"mirpur 15"
   },
   {
-    "name": "Shyam Kumar",
+    "displayName": "Shyam Kumar",
     "email": "john@gmail.com",
     "facebook":"https://www.facebook.com/",
     "phone": "9898909878",
@@ -39,7 +38,7 @@
     "address":"mirpur 10"
   },
   {
-    "name": "Radhe Shyam",
+    "displayName": "Radhe Shyam",
     "email": "john@gmail.com",
     "facebook":"https://www.facebook.com/",
     "phone": "9898909878",
@@ -52,7 +51,7 @@
     "address":"mirpur 12"
   },
   {
-    "name": "Mohan Kumar",
+    "displayName": "Mohan Kumar",
     "email": "john@gmail.com",
     "facebook":"https://www.facebook.com/",
     "phone": "9898909878",
@@ -65,7 +64,7 @@
     "address":"mirpur 14"
   },
   {
-    "name": "Suresh Kumar",
+    "displayName": "Suresh Kumar",
     "email": "john@gmail.com",
     "facebook":"https://www.facebook.com/",
     "phone": "9898909878",
@@ -78,7 +77,7 @@
     "address":"mirpur 10"
   },
   {
-    "name": "Rani Devi",
+    "displayName": "Rani Devi",
     "email": "john@gmail.com",
     "facebook":"https://www.facebook.com/",
     "phone": "9898909878",
@@ -91,7 +90,7 @@
     "address":"mirpur dohs"
   },
   {
-    "name": "Shekhar",
+    "displayName": "Shekhar",
     "email": "john@gmail.com",
     "facebook":"https://www.facebook.com/",
     "phone": "9898909878",
@@ -104,7 +103,7 @@
     "address":"mirpur 11.5"
   },
   {
-    "name": "Devanand",
+    "displayName": "Devanand",
     "email": "john@gmail.com",
     "facebook":"https://www.facebook.com/",
     "phone": "9898909878",
@@ -117,7 +116,7 @@
     "address":"mirpur 13" 
   },
   {
-    "name": "Rajesh Mishra",
+    "displayName": "Rajesh Mishra",
     "email": "john@gmail.com",
     "facebook":"https://www.facebook.com/",
     "phone": "9898909878",
@@ -130,7 +129,7 @@
     "address":"mirpur 12"
   },
   {
-    "name": "Om Prakash",
+    "displayName": "Om Prakash",
     "email": "john@gmail.com",
     "phone": "9898909878",
     "facebook":"https://www.facebook.com/",
@@ -143,7 +142,7 @@
     "address":"mirpur 14"
   },
   {
-    "name": "Raj",
+    "displayName": "Raj",
     "email": "john@gmail.com",
     "phone": "9898909878",
     "country": "IN",
@@ -156,7 +155,7 @@
     "address":"mirpur 10"
   },
   {
-    "name": "Narayan Das",
+    "displayName": "Narayan Das",
     "email": "john@gmail.com",
     "phone": "9898909878",
     "country": "IN",
@@ -169,7 +168,7 @@
     "address":"mirpur 11"
   },
   {
-    "name": "Rekha",
+    "displayName": "Rekha",
     "email": "john@gmail.com",
     "phone": "9898909878",
     "country": "IN",
@@ -182,7 +181,7 @@
     "address":"mirpur 10"
   },
   {
-    "name": "Ajay Sharma",
+    "displayName": "Ajay Sharma",
     "email": "john@gmail.com",
     "facebook":"https://www.facebook.com/",
     "phone": "9898909878",
@@ -195,7 +194,7 @@
     "address":"mirpur 14"
   },
   {
-    "name": "Ram Kishan",
+    "displayName": "Ram Kishan",
     "email": "john@gmail.com",
     "phone": "9898909878",
     "country": "US",
