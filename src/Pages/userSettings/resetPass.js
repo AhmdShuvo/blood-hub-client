@@ -17,7 +17,7 @@ const ResetPass = () => {
     }
 
     const handleSearch = (email) => {
-        fetch(`http://localhost:9000/user/${email}`).then(datas => datas.json()).then(users => setUsers(users[0]))
+        fetch(`https://bloodhub-server-api.onrender.com/user/${email}`).then(datas => datas.json()).then(users => setUsers(users[0]))
     }
 
     

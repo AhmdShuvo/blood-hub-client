@@ -1,18 +1,34 @@
-import React, { useState } from 'react';
+import React, { useState,useRef } from 'react';
 import "./Contact.scss"
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
     let [name, setName] = useState()
     let [email, setEmail] = useState()
     let [comments, setComments] = useState()
 
-    
+    const form = useRef();
 
     const handleSubmit  = e =>{
         const newData = {name, email, comments}
        
-        e.preventDefault()
+       
     }
+    
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_2natv1r', 'template_dzduswh', form.current, 'user_tve3WtBVfEKVjvfrqtDtj')
+          .then((result) => {
+              console.log(result.text);
+              
+          }, (error) => {
+              console.log(error.text);
+          });
+          e.preventDefault()
+      };
+    
     return (
         <div>
             <section id="contact">
@@ -37,18 +53,18 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className="contact-form-wrapper">
-                        <form onSubmit={handleSubmit}>
+                        <form ref={form} onSubmit={sendEmail}>
                             <div className="form-item">
                                 <input type="text" 
                                 className='contact-input'
-                                name="sender"
+                                name="from_name"
                                 onChange={(e) => setName(e.target.value)} required />
                                 <label className='label'>Name:</label>
                             </div>
                             <div className="form-item">
                                 <input type="text"
                                 className='contact-input' 
-                                name="email"
+                                name="reply_to"
                                 onChange={(e) => setEmail(e.target.value)} required />
                                 <label className='label'>Email:</label>
                             </div>

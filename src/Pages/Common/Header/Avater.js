@@ -6,7 +6,7 @@ import './Header.css'
 
 
 const Avater = ({user,logOut}) => {
-console.log(user.dispayName)
+
 
   const [isOpen, setOpen] = useState(false);
 

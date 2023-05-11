@@ -67,10 +67,10 @@ const About = () => {
             <div className="col-12 col-sm-6 col-md-4 col-lg-3">
               <div className="our-team">
                 <div className="picture">
-                  <img className="img-fluid" src="./images/developers/tanjir.jpg" />
+                  <img className="img-fluid" src="./images/developers/ab.jpg" />
                 </div>
                 <div className="team-content">
-                  <h3 className="name">Robiul Islam</h3>
+                  <h3 className="name">Md. Abusayed Topoder</h3>
                   <h4 className="title">Web Developer</h4>
                 </div>
                 <ul className="social">

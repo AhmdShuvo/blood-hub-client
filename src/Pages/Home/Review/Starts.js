@@ -7,7 +7,7 @@ const Starts = ({stars}) => {
     for(let i=1;i<=stars;i++){
         star.push(1)
     }
-    console.log(star);
+    
     return (
         <div>
             <div class="flex items-center">

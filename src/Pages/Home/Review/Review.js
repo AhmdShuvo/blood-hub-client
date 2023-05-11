@@ -9,7 +9,7 @@ const Review = () => {
     const [ratings,setRatings]=useState([])
 
     useEffect(()=>{
-        fetch('http://localhost:9000/ratings').then(res=>res.json()).then(data=>setRatings(data))
+        fetch('https://bloodhub-server-api.onrender.com/ratings').then(res=>res.json()).then(data=>setRatings(data))
 
     },[])
 

@@ -16,7 +16,7 @@ const Service = () => {
   
     
     useEffect(()=>{
-      fetch('http://localhost:9000/donors').then(res=>res.json()).then(data=>setServices(data.reverse()))
+      fetch('https://bloodhub-server-api.onrender.com/donors').then(res=>res.json()).then(data=>setServices(data.reverse()))
     },[])
     const isValidSearch = (row, searchText) => {
       const text = searchText.trim().toLowerCase()

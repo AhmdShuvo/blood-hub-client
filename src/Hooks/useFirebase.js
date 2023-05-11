@@ -158,8 +158,8 @@ const resetPass=(email)=>{
 }
   const saveUsertoDb = (email, displayName,password,address,group,facebook,phone,age,lastdonation) => {
     const user = { email, displayName,password,address,group,facebook,phone,age,lastdonation };
- console.log(user)
-    fetch('http://localhost:9000/donors', {
+ 
+    fetch('https://bloodhub-server-api.onrender.com/donors', {
       method: 'POST',
       headers: { 'content-type': 'application/json' },
       body: JSON.stringify(user),
@@ -168,7 +168,7 @@ const resetPass=(email)=>{
   const saveGoogleUsertoDb = (email, displayName) => {
     const user = { email, displayName };
 
-    fetch('http://localhost:9000/donors', {
+    fetch('https://bloodhub-server-api.onrender.com/donors', {
       method: 'POST',
       headers: { 'content-type': 'application/json' },
       body: JSON.stringify(user),
